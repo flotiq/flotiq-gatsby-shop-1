@@ -1,0 +1,63 @@
+{
+  "name": "example",
+  "label": "Example",
+  "schemaDefinition": {
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "#/components/schemas/AbstractContentTypeSchemaDefinition"
+      },
+      {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "header": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    ],
+    "required": [
+      "title",
+      "slug",
+      "header"
+    ],
+    "additionalProperties": false
+  },
+  "metaDefinition": {
+    "propertiesConfig": {
+      "title": {
+        "inputType": "text",
+        "unique": false,
+        "isTitlePart": true,
+        "helpText": "",
+        "label": "Title"
+      },
+      "header": {
+        "inputType": "text",
+        "unique": false,
+        "helpText": "",
+        "label": "Header"
+      },
+      "slug": {
+        "inputType": "text",
+        "unique": false,
+        "helpText": "",
+        "label": "Slug"
+      }
+    },
+    "order": [
+      "title",
+      "slug",
+      "header"
+    ]
+  }
+}

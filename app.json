@@ -1,0 +1,19 @@
+{
+  "name": "Gatsby starter boilerplate",
+  "env":{
+    "GATSBY_FLOTIQ_API_KEY": {
+      "description": "Flotiq API key"
+    },
+    "GA_TRACKING_ID": {
+      "description": "GA tracking ID"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ]
+}
