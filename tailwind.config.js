@@ -6,20 +6,15 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: '#000000',
-                secondary: '#41624B',
+                primary: '#3D3D3D',
                 red: '#FF0000',
-                gray: '#9fa09c',
-                'light-gray': '#F4F4F4',
-                'green-gray': '#E8E9E3',
+                gray: '#8f8f8f',
+                'light-gray': '#F9F9F9',
             },
         },
         fontFamily: {
-            roboto: ['Roboto', 'sans-serif'],
-            grotesque: ['Darker Grotesque', 'sans-serif'],
-        },
-        minHeight: {
-            '1/2vh': '50vh',
+            ubuntu: ['Ubuntu', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
         },
     },
     presets: [
