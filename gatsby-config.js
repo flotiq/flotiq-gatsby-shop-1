@@ -44,7 +44,7 @@ module.exports = {
                 forceReload: false,
                 includeTypes: [
                     '_media',
-                    'example',
+                    'product',
                 ],
             },
         },

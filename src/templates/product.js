@@ -3,31 +3,56 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 
-const IndexPage = ({ data }) => {
+/**
+ * Content of example page
+ */
+const ExamplePage = ({ data }) => {
+    // Extracting data from GraphQL query, the query is on the bottom of this file
+    const { product } = data;
     const products = data.allProduct.nodes;
-
     return (
-        <Layout additionalClass={['bg-white']}>
+        <Layout>
+            {/* Content of <head> tag */}
             <Helmet>
-                <title>Flotiq Gatsby shop starter</title>
+                <title>{product.title}</title>
             </Helmet>
-            <div>
-                {products.map((product) => (
-                    <a href={product.slug} className="block">{product.name}</a>
-                ))}
-            </div>
+            <div>{product.name}</div>
         </Layout>
     );
 };
 
 export const pageQuery = graphql`
-    query indexQuery($skip: Int!, $limit: Int!) {
+    query ProductBySlug($slug: String!) {
         site {
             siteMetadata {
                 title
             }
         }
-        allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: $limit, skip: $skip,) {
+        product( slug: { eq: $slug } ) {
+            name
+            price
+            slug
+            description
+            id
+            productImage {
+                extension
+                url
+                width
+                height
+                localFile {
+                    publicURL
+                    childImageSharp {
+                        gatsbyImageData(layout: FULL_WIDTH)
+                    }
+                }
+            }
+            productGallery {
+                localFile {
+                    publicURL
+                }
+            }
+        }
+        allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: 4, filter: {slug: {ne: $slug}}) {
             nodes {
                 name
                 price
@@ -63,4 +88,4 @@ export const pageQuery = graphql`
     }
 `;
 
-export default IndexPage;
+export default ExamplePage;
