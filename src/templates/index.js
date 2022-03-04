@@ -2,15 +2,23 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
+import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
 
 const IndexPage = ({ data }) => {
     const products = data.allProduct.nodes;
+    const categoryTabs = [
+        { name: 'New', href: '#', current: true },
+        { name: 'Shoes', href: '#', current: false },
+        { name: 'Clothing', href: '#', current: false },
+        { name: 'Accessories', href: '#', current: false },
+    ];
 
     return (
         <Layout additionalClass={['bg-white']}>
             <Helmet>
                 <title>Flotiq Gatsby shop starter</title>
             </Helmet>
+            <CategoriesChoiceBar additionalClass={['my-5']} categoryTabs={categoryTabs} />
             <div>
                 {products.map((product) => (
                     <a href={product.slug} className="block">{product.name}</a>
