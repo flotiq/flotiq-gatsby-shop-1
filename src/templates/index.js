@@ -34,16 +34,6 @@ const IndexPage = ({ data }) => {
                 additionalClass={['my-5']}
                 headerText="Products"
             />
-            <div>
-                {products.map((product) => (
-                    <a
-                        href={product.slug}
-                        className="block"
-                    >
-                        {product.name}
-                    </a>
-                ))}
-            </div>
         </Layout>
     );
 };
