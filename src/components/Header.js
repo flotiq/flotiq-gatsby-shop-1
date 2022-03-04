@@ -13,7 +13,7 @@ const Header = () => (
                         <Link to="/" className="w-full flex justify-center">
                             <div className="flex-shrink-0 flex items-center">
                                 <img
-                                    className="block h-11 w-auto"
+                                    className="block h-9 md:h-11 w-auto"
                                     src={Logo}
                                     alt="Workflow"
                                 />
@@ -32,7 +32,7 @@ const Header = () => (
                                 <span className="absolute h-3 w-3 bottom-1 right-1 bg-red rounded-full" />
                             </button>
                         </div>
-                        <div className="-mr-2 flex items-center md:hidden">
+                        <div className="absolute right-0 h-full -mr-2 flex items-center md:hidden">
                             <Disclosure.Button
                                 className="inline-flex items-center justify-center p-2 text-secondary"
                             >
