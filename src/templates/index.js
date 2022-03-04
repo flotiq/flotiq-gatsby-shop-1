@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
+import BestSellers from '../sections/BestSellers';
 
 const IndexPage = ({ data }) => {
     const products = data.allProduct.nodes;
@@ -18,10 +19,23 @@ const IndexPage = ({ data }) => {
             <Helmet>
                 <title>Flotiq Gatsby shop starter</title>
             </Helmet>
-            <CategoriesChoiceBar additionalClass={['my-5']} categoryTabs={categoryTabs} />
+            <CategoriesChoiceBar
+                additionalClass={['my-5']}
+                categoryTabs={categoryTabs}
+            />
+            <BestSellers
+                products={products}
+                additionalClass={['bg-green-gray py-14']}
+                headerText="Bestsellers"
+            />
             <div>
                 {products.map((product) => (
-                    <a href={product.slug} className="block">{product.name}</a>
+                    <a
+                        href={product.slug}
+                        className="block"
+                    >
+                        {product.name}
+                    </a>
                 ))}
             </div>
         </Layout>
