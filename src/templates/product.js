@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
+import Products from '../sections/Products';
+import CustomersChoice from '../sections/CustomersChoice';
 
 /**
  * Content of example page
@@ -16,7 +18,11 @@ const ExamplePage = ({ data }) => {
             <Helmet>
                 <title>{product.title}</title>
             </Helmet>
-            <div>{product.name}</div>
+            <CustomersChoice
+                products={products}
+                additionalClass={['my-5']}
+                headerText="Other customers also chose"
+            />
         </Layout>
     );
 };
@@ -52,7 +58,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: 4, filter: {slug: {ne: $slug}}) {
+        allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: 5, filter: {slug: {ne: $slug}}) {
             nodes {
                 name
                 price

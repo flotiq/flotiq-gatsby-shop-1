@@ -6,7 +6,7 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
     <Card
         bordered={false}
         rounded="none"
-        additionalClasses={['!bg-transparent mb-10']}
+        additionalClasses={['!bg-transparent mb-10 cursor-pointer']}
         onClick={() => navigate(`/${slug}`)}
     >
         <Card.Img
@@ -26,7 +26,7 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
                     rounded="none"
                     size="sm"
                     additionalClasses={['bg-transparent justify-center uppercase !text-md font-light text-primary '
-                    + 'border shadow-none uppercase']}
+                    + 'border shadow-none uppercase !px-5']}
                 />
                 <p className="font-light text-2xl">
                     $
