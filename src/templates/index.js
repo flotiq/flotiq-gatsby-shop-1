@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
 import BestSellers from '../sections/BestSellers';
+import Products from '../sections/Products';
 
 const IndexPage = ({ data }) => {
     const products = data.allProduct.nodes;
@@ -27,6 +28,11 @@ const IndexPage = ({ data }) => {
                 products={products}
                 additionalClass={['bg-green-gray py-14']}
                 headerText="Bestsellers"
+            />
+            <Products
+                products={products}
+                additionalClass={['my-5']}
+                headerText="Products"
             />
             <div>
                 {products.map((product) => (
