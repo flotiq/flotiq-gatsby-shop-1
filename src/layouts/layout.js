@@ -5,7 +5,7 @@ import Contact from '../sections/Contact';
 import Logo from '../assets/shop-logo.svg';
 
 const Layout = ({ children, additionalClass = [] }) => (
-    <main className={['font-ubuntu bg-light-gray md:bg-white', ...additionalClass].join(' ')}>
+    <main className={['font-ubuntu text-primary bg-light-gray md:bg-white', ...additionalClass].join(' ')}>
         <Header />
         {children}
         <Contact
