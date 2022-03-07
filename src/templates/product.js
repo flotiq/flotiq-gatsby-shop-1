@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 import Products from '../sections/Products';
 import CustomersChoice from '../sections/CustomersChoice';
-import ReviewsSection from '../reviews/ReviewsSection';
+import ReviewsSection from '../sections/ReviewsSection';
 import Avatar from '../assets/avatar.jpg';
 
 const reviews = [
@@ -35,16 +35,16 @@ const ExamplePage = ({ data }) => {
             <Helmet>
                 <title>{product.title}</title>
             </Helmet>
-            <CustomersChoice
-                products={products}
-                additionalClass={['my-5']}
-                headerText="Other customers also chose"
-            />
             <ReviewsSection
                 headerText="Reviews"
                 reviews={reviews}
                 avatar={Avatar}
                 additionalClass={['my-10 lg:my-24']}
+            />
+            <CustomersChoice
+                products={products}
+                additionalClass={['my-5']}
+                headerText="Other customers also chose"
             />
         </Layout>
     );
