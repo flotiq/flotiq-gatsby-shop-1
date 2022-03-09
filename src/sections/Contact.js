@@ -74,7 +74,7 @@ const Contact = ({
     address,
     emailAddress,
 }) => (
-    <div className={['grid md:grid-cols-2 max-w-7xl mx-auto '
+    <div className={['grid md:grid-cols-2 max-w-7xl mx-auto mt-20 '
     + 'py-1 md:py-6 px-4 sm:px-6 lg:px-8', ...additionalClass].join(' ')}
     >
         <div className="flex flex-col md:items-start
