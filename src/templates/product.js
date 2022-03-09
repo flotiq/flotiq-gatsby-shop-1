@@ -5,6 +5,23 @@ import { Image, Paragraph, Header, Button } from 'flotiq-components-react';
 import { PlusIcon, MinusIcon } from '@heroicons/react/solid';
 import Layout from '../layouts/layout';
 import CustomersChoice from '../sections/CustomersChoice';
+import ReviewsSection from '../sections/ReviewsSection';
+import Avatar from '../assets/avatar.jpg';
+
+const reviews = [
+    { review: 'The best store in our town! plants are always in good condition.',
+        author: 'Joe Jonas' },
+    { review: 'I ordered 3 packs of roses last friday and they all came so fast and fresh',
+        author: 'Kate Smith' },
+    { review: 'The staff was so sweet they helped me decorate my room with plants!',
+        author: 'John Doe' },
+    { review: 'The best store in our town! plants are always in good condition.',
+        author: 'Jane Doe' },
+    { review: 'I ordered 3 packs of roses last friday and they all came so fast and fresh',
+        author: 'John Kovalski' },
+    { review: 'The staff was so sweet they helped me decorate my room with plants!',
+        author: 'Joe Novak' },
+];
 
 const buttonLabel = 'Add to cart';
 const sizes = [
@@ -105,6 +122,12 @@ const ExamplePage = ({ data }) => {
                     </div>
                 </div>
             </div>
+            <ReviewsSection
+                headerText="Reviews"
+                reviews={reviews}
+                avatar={Avatar}
+                additionalClass={['my-10 lg:my-24']}
+            />
             <CustomersChoice
                 products={products}
                 additionalClass={['my-5']}
