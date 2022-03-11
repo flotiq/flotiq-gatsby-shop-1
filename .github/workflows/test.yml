@@ -1,0 +1,25 @@
+name: test-build
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 14.x ]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install -g gatsby-cli
+      - run: npm install -g flotiq-cli
+      - run: flotiq import ${{ secrets.GATSBY_FLOTIQ_API_KEY }}  .
+      - run: yarn install
+      - run: gatsby build
+        env:
+          GATSBY_FLOTIQ_API_KEY: ${{ secrets.GATSBY_FLOTIQ_API_KEY }}
+          GA_TRACKING_ID: ''
