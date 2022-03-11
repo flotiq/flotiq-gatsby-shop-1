@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { ShoppingBagIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import Link from 'gatsby-link';
@@ -25,7 +25,7 @@ const Header = () => (
                             <button
                                 type="button"
                                 className="p-1 rounded-full text-secondary hover:text-gray focus:outline-none
-                                focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 relative"
+                                focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 relative snipcart-checkout"
                             >
                                 <span className="sr-only">View notifications</span>
                                 <ShoppingBagIcon className="h-8 w-8" aria-hidden="true" />

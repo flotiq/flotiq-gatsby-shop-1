@@ -18,12 +18,17 @@ const IndexPage = ({ data }) => {
     return (
         <Layout additionalClass={['bg-white']}>
             <Helmet>
-                <title>Flotiq Gatsby shop starter</title>
+                <title>{data.site.siteMetadata.title}</title>
+                <meta
+                    name="description"
+                    content={data.site.siteMetadata.description}
+                />
             </Helmet>
-            <CategoriesChoiceBar
-                additionalClass={['my-5']}
-                categoryTabs={categoryTabs}
-            />
+
+            {/* <CategoriesChoiceBar */}
+            {/*    additionalClass={['my-5']} */}
+            {/*    categoryTabs={categoryTabs} */}
+            {/* /> */}
             <BestSellers
                 products={products}
                 additionalClass={['bg-green-gray py-14']}
@@ -43,6 +48,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                description
             }
         }
         allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: $limit, skip: $skip,) {

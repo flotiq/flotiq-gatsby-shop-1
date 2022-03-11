@@ -5163,10 +5163,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flotiq-components-react@^0.4.13:
-  version "0.4.13"
-  resolved "https://registry.yarnpkg.com/flotiq-components-react/-/flotiq-components-react-0.4.13.tgz#fe846ad45d87fc245dbb3923bb7ff06c380bb97f"
-  integrity sha512-ABXzQiPFRua6l6o4JsrGwXr67XBB5srcdscbtwPFDiO3jYjO496zVG1ejoEVE27RrKB9d8cwJUM9jLCby8UcVg==
+flotiq-components-react@^0.4.14:
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/flotiq-components-react/-/flotiq-components-react-0.4.14.tgz#5995e69ffdef7249f6bcb9b5a7149db947daa036"
+  integrity sha512-L6W3Nm5Z0C3kNHDksOMoNh02KM07SORP4Ewy8NdYJTpMyqj2rTDhU9UG69giP2xMUH7eqe8J3LAcWPkOKIuyow==
 
 follow-redirects@^1.0.0, follow-redirects@^1.14.0:
   version "1.14.8"
@@ -5550,6 +5550,11 @@ gatsby-plugin-sitemap@^5.7.0:
     common-tags "^1.8.2"
     minimatch "^3.0.4"
     sitemap "^7.0.0"
+
+gatsby-plugin-snipcartv3@^1.1.2:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-snipcartv3/-/gatsby-plugin-snipcartv3-1.2.5.tgz#f10f32504edb9cf674f69209dce077714a7b87d5"
+  integrity sha512-uDwRhL+qDUgxWqjrisNETCCxb1QYXAXYOq+tQ9/xdiHG2r/++1IeueND+umthc3H+M+ktPDSky8knCVcb1lEoQ==
 
 gatsby-plugin-typescript@^4.7.0:
   version "4.7.0"
