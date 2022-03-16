@@ -57,7 +57,7 @@ const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
                 renderButtonGroupOutside
             >
                 {reviews.map((review) => (
-                    <div className="lg:mb-0 border border-primary mx-3">
+                    <div className="lg:mb-0 border border-primary mx-3" key={review.author}>
                         <Paragraph
                             text={review.review}
                             additionalClasses={['!text-sm md:!text-base !font-light !leading-6 !p-3 md!p-5']}

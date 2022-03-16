@@ -85,11 +85,5 @@ module.exports = {
             },
         },
         'gatsby-plugin-postcss',
-        {
-            resolve: 'gatsby-plugin-snipcart-advanced',
-            options: {
-                publicApiKey: process.env.SNIPCART_API_KEY,
-            },
-        },
     ],
 };
