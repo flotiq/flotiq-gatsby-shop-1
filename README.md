@@ -63,7 +63,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
     flotiq import [flotiqApiKey] .
     ```
 
-   It will add one example object to your Flotiq account.
+   It will add four example objects to your Flotiq account.
 
    _Note: You need to put your Read and write API key as the `flotiqApiKey` for import to work, You don't need any content types in your account._
 
@@ -73,7 +73,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
-   Open the `flotiq-gatsby-shop-1` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+   Open the `flotiq-gatsby-shop-1` directory in your code editor of choice and edit `src/templates/index.js`. Save your changes and the browser will update in real time!
 
 6. **Manage your content using Flotiq editor**
 

@@ -13,7 +13,7 @@ module.exports = {
     siteMetadata: {
         title: 'Flotiq gatsby starter boilerplate',
         description: 'Flotiq gatsby starter boilerplate',
-        siteUrl: 'https://example.com',
+        siteUrl: 'https://flotiqgatsbyshop1.gatsbyjs.io',
     },
     plugins: [
         {
@@ -61,8 +61,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
-                host: 'https://your-domain.com',
-                sitemap: 'https://your-domain.com/sitemap.xml',
+                host: 'https://flotiqgatsbyshop1.gatsbyjs.io',
+                sitemap: 'https://flotiqgatsbyshop1.gatsbyjs.io/sitemap.xml',
                 policy: [{ userAgent: '*', allow: '/' }],
             },
         },
