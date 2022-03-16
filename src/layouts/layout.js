@@ -9,7 +9,6 @@ const Layout = ({ children, additionalClass = [] }) => (
     <main className={['font-ubuntu text-primary bg-light-gray md:bg-white', ...additionalClass].join(' ')}>
         <Helmet>
             <html lang="en" />
-            <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css" />
         </Helmet>
         <Header />
         {children}
