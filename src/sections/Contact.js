@@ -54,7 +54,7 @@ const socialIcons = {
             href: 'https://flotiq.com',
             icon: (props) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                    <path illRule="evenodd" d={youtubePath} clipRule="evenodd" />
+                    <path fillRule="evenodd" d={youtubePath} clipRule="evenodd" />
                 </svg>
             ),
         },
