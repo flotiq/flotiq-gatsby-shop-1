@@ -13,7 +13,7 @@ const Header = () => (
                         <Link to="/" className="w-full flex justify-center">
                             <div className="flex-shrink-0 flex items-center">
                                 <img
-                                    className="block h-9 md:h-11 w-auto"
+                                    className="block h-10 md:h-12 w-auto"
                                     src={Logo}
                                     alt="Workflow"
                                 />
@@ -28,7 +28,7 @@ const Header = () => (
                                 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 relative snipcart-checkout"
                             >
                                 <span className="sr-only">View notifications</span>
-                                <ShoppingBagIcon className="h-8 w-8" aria-hidden="true" />
+                                <ShoppingBagIcon className="h-12 w-12" aria-hidden="true" />
                                 <span className="absolute h-3 w-3 bottom-1 right-1 bg-red rounded-full" />
                             </button>
                         </div>
@@ -38,9 +38,9 @@ const Header = () => (
                             >
                                 <span className="sr-only">Open main menu</span>
                                 {open ? (
-                                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                                    <XIcon className="block h-12 w-12" aria-hidden="true" />
                                 ) : (
-                                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                                    <MenuIcon className="block h-12 w-12" aria-hidden="true" />
                                 )}
                             </Disclosure.Button>
                         </div>
