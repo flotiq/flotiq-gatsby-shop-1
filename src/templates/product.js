@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Image, Paragraph, Header, Button } from 'flotiq-components-react';
+import { Paragraph, Header, Button } from 'flotiq-components-react';
 import { PlusIcon, MinusIcon } from '@heroicons/react/solid';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
 import CustomersChoice from '../sections/CustomersChoice';
 import ReviewsSection from '../sections/ReviewsSection';
@@ -57,9 +58,10 @@ const ExamplePage = ({ data }) => {
                     style={{ backgroundImage:
                   `url('${product.productImage[0] && product.productImage[0].localFile.publicURL}')` }}
                 >
-                    <Image
-                        url={product.productImage[0] && product.productImage[0].localFile.publicURL}
-                        additionalClasses={['w-full lg:hidden']}
+                    <GatsbyImage
+                        image={getImage(product.productImage[0] && product.productImage[0].localFile)}
+                        alt={product.title}
+                        className="w-full lg:hidden"
                     />
                 </div>
                 <div className="flex flex-col basis-full lg:basis-1/2 pl-0 lg:pl-12 pt-5 pb-10">

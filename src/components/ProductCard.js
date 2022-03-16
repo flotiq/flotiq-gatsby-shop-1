@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'flotiq-components-react';
 import { Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
     <Card
@@ -9,10 +10,10 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
         additionalClasses={['!bg-transparent mb-10 cursor-pointer']}
     >
         <Link to={`/${slug}`}>
-            <Card.Img
-                src={productImage}
+            <GatsbyImage
+                image={getImage(productImage)}
                 alt={name}
-                additionalClasses={['w-full']}
+                className="w-full"
             />
         </Link>
         <Card.Body additionalClasses={['!px-0 !pt-4']}>
