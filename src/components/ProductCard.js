@@ -33,7 +33,7 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
                         'border shadow-none uppercase !px-5', 'snipcart-add-item']}
                     data-item-id={slug}
                     data-item-price={price}
-                    data-item-image={productImage}
+                    data-item-image={productImage.publicURL}
                     data-item-name={name}
                     data-item-url="/"
                 />
