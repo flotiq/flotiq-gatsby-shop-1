@@ -60,7 +60,7 @@ const ExamplePage = ({ data }) => {
                 >
                     <GatsbyImage
                         image={getImage(product.productImage[0] && product.productImage[0].localFile)}
-                        alt={product.title}
+                        alt={product.name}
                         className="w-full lg:hidden"
                     />
                 </div>
