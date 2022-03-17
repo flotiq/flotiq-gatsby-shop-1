@@ -11,10 +11,10 @@ module.exports = {
                 gray: '#8f8f8f',
                 'light-gray': '#F9F9F9',
             },
-        },
-        fontFamily: {
-            ubuntu: ['Ubuntu', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
+            fontFamily: {
+                ubuntu: ['Ubuntu', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
+            },
         },
     },
     presets: [

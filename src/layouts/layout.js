@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Contact from '../sections/Contact';
@@ -6,6 +7,9 @@ import Logo from '../assets/shop-logo.svg';
 
 const Layout = ({ children, additionalClass = [] }) => (
     <main className={['font-ubuntu text-primary bg-light-gray md:bg-white', ...additionalClass].join(' ')}>
+        <Helmet>
+            <html lang="en" />
+        </Helmet>
         <Header />
         {children}
         <Contact
