@@ -22,5 +22,5 @@ jobs:
       - run: gatsby build
         env:
           GATSBY_FLOTIQ_API_KEY: ${{ secrets.GATSBY_FLOTIQ_API_KEY }}
-          SNIPCART_API_KEY: ''
+          SNIPCART_API_KEY: 'test'
           GA_TRACKING_ID: ''
