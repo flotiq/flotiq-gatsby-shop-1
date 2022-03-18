@@ -54,7 +54,7 @@ const socialIcons = {
             href: 'https://flotiq.com',
             icon: (props) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                    <path illRule="evenodd" d={youtubePath} clipRule="evenodd" />
+                    <path fillRule="evenodd" d={youtubePath} clipRule="evenodd" />
                 </svg>
             ),
         },
@@ -119,13 +119,12 @@ const Contact = ({
                 </div>
             </div>
             <div className="w-full md:hidden flex flex-col items-center justify-between mt-10">
-                <Image url={logoImage} additionalClasses={['h-10 md:h-16 w-auto mb-20']} />
+                <Image url={logoImage} additionalClasses={['h-10 md:h-16 w-auto mb-20']} alt="Logo" />
                 <Header text="Find us" additionalClasses={['!font-light !text-2xl !p-0 mb-3 uppercase']} />
                 <div className="flex space-x-6">
                     {socialIcons.social.map((item) => (
-                        <div className="flex items-center">
+                        <div className="flex items-center" key={item.name}>
                             <a
-                                key={item.name}
                                 href={item.href}
                                 className="text-gray p-2"
                             >

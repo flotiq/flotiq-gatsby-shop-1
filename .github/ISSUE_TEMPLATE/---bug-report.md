@@ -4,7 +4,7 @@ about: Report reproducible software issues, so we can improve
 
 ---
 
-Welcome to the Gatsby Starter Flotiq boilerplate GitHub repo!
+Welcome to the Gatsby Starter Flotiq for shop GitHub repo!
 
 For questions related to the usage of Gatsby or GraphQL, please check out their docs at https://www.gatsbyjs.org/ and https://graphql.org/
 

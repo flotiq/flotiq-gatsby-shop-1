@@ -20,7 +20,7 @@ const BestSellers = ({ products, additionalClass, headerText }) => (
                         name={product.name}
                         description={product.description}
                         price={product.price}
-                        productImage={product.productImage[0] && product.productImage[0].localFile.publicURL}
+                        productImage={product.productImage[0] && product.productImage[0].localFile}
                         buttonLabel="Add to cart"
                         slug={product.slug}
                     />

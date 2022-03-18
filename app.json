@@ -4,6 +4,9 @@
     "GATSBY_FLOTIQ_API_KEY": {
       "description": "Flotiq API key"
     },
+    "SNIPCART_API_KEY": {
+      "description": "Snipcart API key"
+    },
     "GA_TRACKING_ID": {
       "description": "GA tracking ID"
     }

@@ -9,21 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
             allProduct(sort: {order: DESC, fields: flotiqInternal___createdAt}) {
                 edges {
                     node {
-                        name
-                        price
                         slug
-                        description
-                        id
-                        productGallery {
-                            localFile {
-                                publicURL
-                            }
-                        }
-                        productImage {
-                            localFile {
-                                publicURL
-                            }
-                        }
                     }
                 }
             }
