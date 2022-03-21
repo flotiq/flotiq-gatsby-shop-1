@@ -25,14 +25,14 @@ const reviews = [
 ];
 
 const buttonLabel = 'Add to cart';
-const sizes = [
-    { name: 'XS', current: false },
-    { name: 'S', current: false },
-    { name: 'M', current: false },
-    { name: 'L', current: true },
-    { name: 'XL', current: false },
-    { name: 'XXL', current: false },
-];
+// const sizes = [
+//     { name: 'XS', current: false },
+//     { name: 'S', current: false },
+//     { name: 'M', current: false },
+//     { name: 'L', current: true },
+//     { name: 'XL', current: false },
+//     { name: 'XXL', current: false },
+// ];
 
 /**
  * Content of example page
@@ -54,14 +54,14 @@ const ExamplePage = ({ data }) => {
             </Helmet>
             <div className="flex flex-wrap max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
-                    className="flex basis-full lg:basis-1/2 bg-contain bg-no-repeat bg-top"
-                    style={{ backgroundImage:
-                  `url('${product.productImage[0] && product.productImage[0].localFile.publicURL}')` }}
+                    className="flex basis-full lg:basis-1/2"
                 >
                     <GatsbyImage
                         image={getImage(product.productImage[0] && product.productImage[0].localFile)}
                         alt={product.name}
-                        className="w-full lg:hidden"
+                        objectFit="contain"
+                        objectPosition="top"
+                        className="w-full"
                     />
                 </div>
                 <div className="flex flex-col basis-full lg:basis-1/2 pl-0 lg:pl-12 pt-5 pb-10">
