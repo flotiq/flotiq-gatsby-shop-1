@@ -120,7 +120,13 @@ const Contact = ({
                 </div>
             </div>
             <div className="w-full md:hidden flex flex-col items-center justify-between mt-10">
-                <Image url={logoImage} additionalClasses={['h-10 md:h-16 w-auto mb-20']} alt="Logo" />
+                <Image
+                    url={logoImage}
+                    additionalClasses={['h-10 md:h-16 w-auto mb-20']}
+                    alt="Logo"
+                    width="150"
+                    height="39"
+                />
                 <Header text="Find us" additionalClasses={['!font-light !text-2xl !p-0 mb-3 uppercase']} />
                 <div className="flex space-x-6">
                     {socialIcons.social.map((item) => (
