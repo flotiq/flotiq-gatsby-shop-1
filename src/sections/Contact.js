@@ -3,6 +3,7 @@ import { Button, Header, Image } from 'flotiq-components-react';
 
 /* eslint-disable-next-line max-len */
 const linkedinPath = 'M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z';
+/* eslint-disable-next-line max-len */
 const youtubePath = 'M20.6,7.6c-0.2-0.9-0.9-1.7-1.9-1.8c-1.5-0.2-4-0.5-6.7-0.5c-2.8,0-5.3,0.3-6.7,0.5C4.4,5.9,3.6,6.6,3.4,7.6\n'
   + '\tC3.2,8.6,3,10.1,3,12s0.2,3.4,0.4,4.4c0.2,0.9,0.9,1.7,1.9,1.8c1.5,0.2,4,0.5,6.7,0.5c2.8,0,5.3-0.3,6.7-0.5\n'
   + '\tc0.9-0.1,1.7-0.9,1.9-1.8c0.2-1,0.4-2.6,0.4-4.4C21,10.1,20.8,8.6,20.6,7.6z M10.2,15.1V8.9l5.4,3.1L10.2,15.1z';
@@ -80,7 +81,7 @@ const Contact = ({
         <div className="flex flex-col md:items-start
         justify-start order-2 md:order-1 md:mt-10 lg:mt-0"
         >
-            <Image url={logoImage} additionalClasses={['hidden md:block h-8 md:h-11 w-auto']} />
+            <Image url={logoImage} additionalClasses={['hidden md:block h-8 md:h-11 w-auto']} width="150" height="39" />
             <div className="grid xl:grid-cols-2 items-start justify-center md:justify-start p-5 xl:p-0 mt-7 md:mt-20">
                 <div className="hidden md:block flex flex-col space-y-1 mb-10">
                     <Header
