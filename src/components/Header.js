@@ -16,6 +16,8 @@ const Header = () => (
                                     className="block h-10 md:h-12 w-auto"
                                     src={Logo}
                                     alt="Workflow"
+                                    width="150"
+                                    height="39"
                                 />
                             </div>
                         </Link>
