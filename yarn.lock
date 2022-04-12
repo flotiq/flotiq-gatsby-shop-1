@@ -5163,10 +5163,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flotiq-components-react@^0.4.14:
-  version "0.4.14"
-  resolved "https://registry.yarnpkg.com/flotiq-components-react/-/flotiq-components-react-0.4.14.tgz#5995e69ffdef7249f6bcb9b5a7149db947daa036"
-  integrity sha512-L6W3Nm5Z0C3kNHDksOMoNh02KM07SORP4Ewy8NdYJTpMyqj2rTDhU9UG69giP2xMUH7eqe8J3LAcWPkOKIuyow==
+flotiq-components-react@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/flotiq-components-react/-/flotiq-components-react-0.5.0.tgz#8e97c108386e1df44f25b1e8bfe871b5099a3ce5"
+  integrity sha512-Y8S0tZsbWi9dTjR/JserkZH7x8aJFFcS5FotnK52yQRh+90irlrRWAyeLEDjlC45CyI465HMLmXokZy0dnh93w==
 
 follow-redirects@^1.0.0, follow-redirects@^1.14.0:
   version "1.14.8"
