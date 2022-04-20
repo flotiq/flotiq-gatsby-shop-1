@@ -7,9 +7,10 @@ const Products = ({ products, additionalClass, headerText }) => (
     <div className={['max-w-7xl mx-auto px-4 sm:px-6 lg:px-8', ...additionalClass].join(' ')}>
         <div className="flex items-center justify-between">
             <Header
-                text={headerText}
                 additionalClasses={['!text-xl md:!text-2xl !font-normal font-roboto uppercase !p-0']}
-            />
+            >
+                {headerText}
+            </Header>
         </div>
         <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10

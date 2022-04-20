@@ -66,14 +66,18 @@ const ExamplePage = ({ data }) => {
                 </div>
                 <div className="flex flex-col basis-full lg:basis-1/2 pl-0 lg:pl-12 pt-5 pb-10">
                     <Header
-                        text={product.name}
                         additionalClasses={['!text-8xl !p-0 mt-3 md:mt-0 mb-5']}
-                    />
+                    >
+                        {product.name}
+                    </Header>
                     <Header
                         additionalClasses={['text-xl md:text-4xl uppercase !font-light !pb-0']}
-                        text={`$${product.price}`}
-                    />
-                    <Paragraph text={product.description} additionalClasses={['mt-5 text-lg']} />
+                    >
+                        {`$${product.price}`}
+                    </Header>
+                    <Paragraph additionalClasses={['mt-5 text-lg']}>
+                        {product.description}
+                    </Paragraph>
                     <div className="flex flex-col w-full md:w-1/2">
                         {/* <div className="flex items-center justify-between text-xl font-light border-b border-gray/30 */}
                         {/* py-7 uppercase" */}
