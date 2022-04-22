@@ -7,9 +7,10 @@ const BestSellers = ({ products, additionalClass, headerText }) => (
     <div className={['w-full', ...additionalClass].join(' ')}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <Header
-                text={headerText}
                 additionalClasses={['!text-xl md:!text-2xl !font-normal font-roboto uppercase !p-0']}
-            />
+            >
+                {headerText}
+            </Header>
             <div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 mt-6 mb-6"
             >
