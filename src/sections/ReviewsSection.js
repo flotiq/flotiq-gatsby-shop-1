@@ -42,9 +42,10 @@ const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
         className={['max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative', ...additionalClass].join(' ')}
     >
         <Header
-            text={headerText}
             additionalClasses={['!text-xl md:!text-2xl !font-normal font-roboto uppercase !p-0']}
-        />
+        >
+            {headerText}
+        </Header>
         <div className="px-5 md:px-20 relative">
             <Carousel
                 draggable={false}
@@ -59,9 +60,10 @@ const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
                 {reviews.map((review) => (
                     <div className="lg:mb-0 border border-primary mx-3" key={review.author}>
                         <Paragraph
-                            text={review.review}
                             additionalClasses={['!text-sm md:!text-base !font-light !leading-6 !p-3 md!p-5']}
-                        />
+                        >
+                            {review.review}
+                        </Paragraph>
                         <div className="grid grid-cols-3">
                             <div className="flex items-center space-x-3 h-full bg-black col-span-2">
                                 <Image
@@ -69,9 +71,10 @@ const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
                                     additionalClasses={['w-12 md:w-14']}
                                 />
                                 <Paragraph
-                                    text={review.author}
                                     additionalClasses={['!text-sm md:!text-base !font-light text-white uppercase pl-1']}
-                                />
+                                >
+                                    {review.author}
+                                </Paragraph>
                             </div>
                             <div className="flex items-center justify-center text-xl md:text-2xl font-light">5/5</div>
                         </div>

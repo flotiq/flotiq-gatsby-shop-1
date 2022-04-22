@@ -9,7 +9,9 @@ const NotFoundPage = () => (
         <Helmet>
             <title>Page not found</title>
         </Helmet>
-        <Header text="Page not found, sorry" />
+        <Header>
+            Page not found, sorry
+        </Header>
         <div className="text-center mt-5 pt-5">
             {/* Example usage of button */}
             <Link to="/"><Button label="Go back to index" /></Link>
