@@ -17,21 +17,24 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: 'gatsby-plugin-google-analytics',
+            // How to configure? https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
+            // Video: https://www.youtube.com/watch?v=Dwi99jtl3Fs
+            resolve: 'gatsby-plugin-google-gtag',
             options: {
-                trackingId: process.env.GA_TRACKING_ID || 'test',
-                // Puts tracking script in the head instead of the body
-                head: true,
-                // IP anonymization for GDPR compliance
-                anonymize: true,
-                // Disable analytics for users with `Do Not Track` enabled
-                respectDNT: true,
-                // Avoids sending pageview hits from custom paths
-                exclude: ['/preview/**'],
-                // Specifies what percentage of users should be tracked
-                sampleRate: 100,
-                // Determines how often site speed tracking beacons will be sent
-                siteSpeedSampleRate: 10,
+                trackingIds: [
+                    process.env.GA_TRACKING_ID || 'test', // Google Analytics / GA
+                    process.env.GA_MEASUREMENT_ID || 'test', // GA Measurement
+                ],
+                gtagConfig: {
+                    optimize_id: 'OPT_CONTAINER_ID',
+                    anonymize_ip: true,
+                    cookie_expires: 0,
+                },
+                pluginConfig: {
+                    head: true,
+                    respectDNT: true,
+                    exclude: ['/preview/**', '/do-not-track/me/too/'],
+                },
             },
         },
         'gatsby-plugin-react-helmet',
