@@ -83,7 +83,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/flotiq-gatsby-shop-1)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/flotiq/flotiq-gatsby-shop-1)
 
 You can also deploy this project to [Heroku](https://www.heroku.com/) in 3 minutes:
 
