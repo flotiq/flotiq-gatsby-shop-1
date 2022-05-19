@@ -43,7 +43,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
     ```
     GATSBY_FLOTIQ_API_KEY=YOUR FLOTIQ API KEY
     SNIPCART_API_KEY=YOUR SNIPCART API KEY
-    GA_TRACKING_ID=YOUR GA TRACKING KEY
+    GA_MEASUREMENT_ID=YOUR MEASUREMENT ID
     ```
 
 4. **Start developing.**

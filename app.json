@@ -7,8 +7,8 @@
     "SNIPCART_API_KEY": {
       "description": "Snipcart API key"
     },
-    "GA_TRACKING_ID": {
-      "description": "GA tracking ID"
+    "GA_MEASUREMENT_ID": {
+      "description": "Google Analytics Measurement ID"
     }
   },
   "buildpacks": [
