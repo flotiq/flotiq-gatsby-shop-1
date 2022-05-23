@@ -26,7 +26,6 @@ const CustomersChoice = ({ products, additionalClass, headerText }) => (
                 ))}
             </div>
         </div>
-
     </div>
 );
 

@@ -28,7 +28,6 @@ const BestSellers = ({ products, additionalClass, headerText }) => (
                 ))}
             </div>
         </div>
-
     </div>
 );
 
