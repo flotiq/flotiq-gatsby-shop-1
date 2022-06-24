@@ -60,7 +60,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
    If you wish to import example data to your account, before running `gatsby develop` run:
 
     ```sh
-    flotiq import [flotiqApiKey] .
+    flotiq import . [flotiqApiKey]
     ```
 
    It will add four example objects to your Flotiq account.
