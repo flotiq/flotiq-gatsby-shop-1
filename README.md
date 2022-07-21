@@ -35,6 +35,8 @@ This command will:
 - import example data to you Flotiq account using the `flotiq import` command
 - start development server using the `gatsby develop` command
 
+![](https://api.flotiq.com/image/0x0/_media-96fcf787-552d-498c-ad47-8a43a76e7cc4.gif)
+
 ## Configuration 
 
 Environment variables are stored in the `.env` files.
