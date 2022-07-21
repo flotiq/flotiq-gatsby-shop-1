@@ -4,6 +4,9 @@
     "GATSBY_FLOTIQ_API_KEY": {
       "description": "Flotiq API key"
     },
+    "GATSBY_FLOTIQ_QUANTITY_API_KEY": {
+      "description": "Flotiq scoped API key"
+    },
     "SNIPCART_API_KEY": {
       "description": "Snipcart API key"
     },
