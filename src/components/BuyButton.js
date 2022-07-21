@@ -24,7 +24,7 @@ const BuyButton = ({
     productImage,
     name,
 }) => {
-    const [productQuantity, setProductQuantity] = useState();
+    const [productQuantity, setProductQuantity] = useState(null);
     useEffect(() => {
         const filter = {
             slug: {
