@@ -19,7 +19,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
 ## Quick start using Flotiq CLI
 
-Start the project from template using [Flotiq CLI]((https://github.com/flotiq/flotiq-cli))
+Start the project from template using [Flotiq CLI](https://github.com/flotiq/flotiq-cli)
 
  ```bash
 npm install -g flotiq-cli
@@ -30,7 +30,7 @@ flotiq start [projectName] https://github.com/flotiq/flotiq-gatsby-shop-1.git [f
 
 This command will:
 - clone starter repository
-- install node dependencies
+- install npm dependencies
 - setup variables in the .env file
 - import example data to you Flotiq account using the `flotiq import` command
 - start development server using the `gatsby develop` command
