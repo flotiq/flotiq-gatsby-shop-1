@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, Card } from 'flotiq-components-react';
+import { Card } from 'flotiq-components-react';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import BuyButton from './BuyButton';
 
 const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
     <Card
@@ -25,17 +26,12 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
                 </Card.Title>
             </Link>
             <div className="flex items-center mt-4 space-x-7">
-                <Button
-                    label={buttonLabel}
-                    rounded="none"
-                    size="sm"
-                    additionalClasses={['bg-transparent justify-center uppercase !text-md font-light text-primary',
-                        'border shadow-none uppercase !px-5', 'snipcart-add-item']}
-                    data-item-id={slug}
-                    data-item-price={price}
-                    data-item-image={productImage.publicURL}
-                    data-item-name={name}
-                    data-item-url="/"
+                <BuyButton
+                    buttonLabel={buttonLabel}
+                    slug={slug}
+                    price={price}
+                    productImage={productImage}
+                    name={name}
                 />
                 <Link to={`/${slug}`}>
                     <p className="font-light text-2xl">

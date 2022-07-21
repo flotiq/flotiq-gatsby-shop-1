@@ -125,6 +125,9 @@ const ExamplePage = ({ data }) => {
                                 </button>
                             </div>
                         </div>
+                        {
+                            /* Change to BuyButton */
+                        }
                         <Button
                             label={buttonLabel}
                             rounded="none"
@@ -138,6 +141,9 @@ const ExamplePage = ({ data }) => {
                             data-item-url="/"
                             data-item-quantity={quantity}
                         />
+                        {
+                            /* End change */
+                        }
                     </div>
                 </div>
             </div>
