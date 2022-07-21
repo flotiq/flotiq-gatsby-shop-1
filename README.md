@@ -17,67 +17,89 @@ This project use:
 
 This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
-## Quick start
+## Quick start using Flotiq CLI
 
-1. **Start the project from template using [Flotiq CLI]((https://github.com/flotiq/flotiq-cli))**
+Start the project from template using [Flotiq CLI](https://github.com/flotiq/flotiq-cli)
 
-    ```bash
-   npm install -g flotiq-cli
-   flotiq start [projectName] https://github.com/flotiq/flotiq-gatsby-shop-1.git [flotiqApiKey]
-    ```
-   * `flotiqApKey` - Read and write API key to your Flotiq account
-   * `projectName` - project name or project path (if you wish to start project in or import data from the current directory - use `.`)
+ ```bash
+npm install -g flotiq-cli
+flotiq start [projectName] https://github.com/flotiq/flotiq-gatsby-shop-1.git [flotiqApiKey]
+```
+* `projectName` - Project path (if you wish to start project in the current directory - use `.`)
+* `flotiqApKey` - [Read and write API key](https://flotiq.com/docs/API/#application-api-keys) to your Flotiq account
 
-2. **You can also start the project from template using Gatsby CLI**
+This command will:
+- create project based on template using the `gatsby new` command
+- install npm dependencies
+- setup variables in the .env file
+- import example data to you Flotiq account using the `flotiq import` command
+- start development server using the `gatsby develop` command
 
-    ```bash
-    gatsby new flotiq-gatsby-shop-1 https://github.com/flotiq/flotiq-gatsby-shop-1.git
-    ```
+![](https://api.flotiq.com/image/0x0/_media-96fcf787-552d-498c-ad47-8a43a76e7cc4.gif)
 
-3. **Configure application**
+## Configuration 
 
-   The next step is to configure our application to know from where it has to fetch the data.
+Environment variables are stored in the `.env` files.
+The `.env.development` file inside the root of the directory should have the following structure:
 
-   You need to create a file called `.env.development` inside the root of the directory, with the following structure:
+```
+GATSBY_FLOTIQ_API_KEY=YOUR FLOTIQ API KEY
+SNIPCART_API_KEY=YOUR SNIPCART API KEY
+GA_MEASUREMENT_ID=YOUR MEASUREMENT ID
+```
 
-    ```
-    GATSBY_FLOTIQ_API_KEY=YOUR FLOTIQ API KEY
-    SNIPCART_API_KEY=YOUR SNIPCART API KEY
-    GA_MEASUREMENT_ID=YOUR MEASUREMENT ID
-    ```
+## Import data (optional)
 
-4. **Start developing.**
+This step is optional and is not necessary if you used flotiq-cli to start the project.
 
-   Navigate into your new site’s directory and start it up.
+If you wish to import example data to your account, before running `gatsby develop` run:
 
-    ```shell
-    cd flotiq-gatsby-shop-1/
-    gatsby develop
-    ```
+```sh
+flotiq import . [flotiqApiKey]
+```
 
-   This step is optional and is not necessary if you used flotiq-cli to start the project.
+It will add four example objects to your Flotiq account.
 
-   If you wish to import example data to your account, before running `gatsby develop` run:
+_Note: You need to put your Read and write API key as the `flotiqApiKey` for import to work, You don't need any content types in your account._
 
-    ```sh
-    flotiq import . [flotiqApiKey]
-    ```
+## Developing
 
-   It will add four example objects to your Flotiq account.
+Navigate into your new site’s directory and start it up.
 
-   _Note: You need to put your Read and write API key as the `flotiqApiKey` for import to work, You don't need any content types in your account._
+```shell
+cd flotiq-gatsby-shop-1/
+gatsby develop
+```
 
-5. **Open the source code and start editing!**
+Your site is now running at `http://localhost:8000`!
 
-   Your site is now running at `http://localhost:8000`!
+_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
-   _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
+Open the `flotiq-gatsby-shop-1` directory in your code editor of choice and edit `src/templates/index.js`.
+Save your changes and the browser will update in real time!
 
-   Open the `flotiq-gatsby-shop-1` directory in your code editor of choice and edit `src/templates/index.js`. Save your changes and the browser will update in real time!
+## Manage your content using Flotiq editor
 
-6. **Manage your content using Flotiq editor**
+You can now easily manage your content using [Flotiq editor](https://editor.flotiq.com).
 
-   You can now easily manage your content using [Flotiq editor](https://editor.flotiq.com)
+As Gatsby generates static pages based on content from headless CMS, you have to rebuild site after the data changes.
+
+### Update data in development
+
+When you update the Content Object in Flotiq you have to rerun `gatsby develop`.
+When you update the Content Type Definition in Flotiq, you have to run `gatsby clean` command.
+
+_Note: To simplify this process you can configure [Gatsby Refreshing Content](https://www.gatsbyjs.com/docs/refreshing-content/) endpoint._
+
+### Update data in production
+
+When you update the data in Flotiq you have to rebuild project using `gatsby build` command.
+
+If you use hosting services listed below you can simplify the process:
+- For Gatsby Cloud use [Flotiq Gatsby plugin](https://flotiq.com/docs/panel/Plugins/Gatsby-cloud-integration/#installing-the-gatsby-plugin)
+- For Netlify use [Flotiq Netlify plugin](https://flotiq.com/docs/panel/Plugins/Netlify-integration/#installing-the-netlify-plugin)
+
+For other services you can configure [Webhook](https://flotiq.com/docs/panel/webhooks/examples/) on data change or manually rebuild site in hosting service.
 
 ## Deploy
 
