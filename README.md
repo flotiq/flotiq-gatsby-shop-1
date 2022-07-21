@@ -29,7 +29,7 @@ flotiq start [projectName] https://github.com/flotiq/flotiq-gatsby-shop-1.git [f
 * `flotiqApKey` - [Read and write API key](https://flotiq.com/docs/API/#application-api-keys) to your Flotiq account
 
 This command will:
-- clone starter repository
+- create project based on template using the `gatsby new` command
 - install npm dependencies
 - setup variables in the .env file
 - import example data to you Flotiq account using the `flotiq import` command
