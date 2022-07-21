@@ -20,7 +20,11 @@ const QUANTITY_API_KEY = process.env.GATSBY_FLOTIQ_QUANTITY_API_KEY;
 const PRODUCTS_API_URL = 'https://api.flotiq.com/api/v1/content/product';
 
 const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => {
+
+    // Add quantity state
     const [productQuantity, setProductQuantity] = useState(null);
+
+    // Get quantity from API
     useEffect(() => {
         const filter = {
             slug: {
@@ -60,6 +64,9 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => {
                     </Card.Title>
                 </Link>
                 <div className="flex items-center mt-4 space-x-7">
+                    {
+                        /* Display button depending on productQuantity */
+                    }
                     {(productQuantity !== null && productQuantity < 1)
                         ? (
                             <Button
