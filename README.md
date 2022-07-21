@@ -25,8 +25,8 @@ Start the project from template using [Flotiq CLI](https://github.com/flotiq/flo
 npm install -g flotiq-cli
 flotiq start [projectName] https://github.com/flotiq/flotiq-gatsby-shop-1.git [flotiqApiKey]
 ```
-* `flotiqApKey` - Read and write API key to your Flotiq account
-* `projectName` - project name or project path (if you wish to start project in or import data from the current directory - use `.`)
+* `projectName` - Project path (if you wish to start project in the current directory - use `.`)
+* `flotiqApKey` - [Read and write API key](https://flotiq.com/docs/API/#application-api-keys) to your Flotiq account
 
 This command will:
 - clone starter repository
