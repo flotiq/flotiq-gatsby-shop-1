@@ -46,6 +46,7 @@ module.exports = {
                 forceReload: false,
                 includeTypes: [
                     '_media',
+                    '_tag',
                     'product',
                 ],
             },
