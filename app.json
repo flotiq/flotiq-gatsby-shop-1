@@ -1,0 +1,22 @@
+{
+  "name": "Gatsby starter boilerplate",
+  "env":{
+    "GATSBY_FLOTIQ_API_KEY": {
+      "description": "Flotiq API key"
+    },
+    "SNIPCART_API_KEY": {
+      "description": "Snipcart API key"
+    },
+    "GA_MEASUREMENT_ID": {
+      "description": "Google Analytics Measurement ID"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ]
+}

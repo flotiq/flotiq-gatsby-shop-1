@@ -1,0 +1,8 @@
+[build]
+  command = "gatsby build"
+  publish = "public/"
+
+[template.environment]
+  GATSBY_FLOTIQ_API_KEY="YOUR FLOTIQ API KEY"
+  SNIPCART_API_KEY="YOUR SNIPCART API KEY"
+  GA_MEASUREMENT_ID="YOUR MEASUREMENT ID"
