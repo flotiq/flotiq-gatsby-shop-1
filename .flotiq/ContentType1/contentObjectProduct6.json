@@ -1,0 +1,39 @@
+{
+    "id": "product-918265",
+    "name": "T-shit logo on back",
+    "slug": "tshirt-logo-back",
+    "price": 25,
+    "internal": {
+        "createdAt": "2022-03-03T10:28:44+00:00",
+        "deletedAt": "",
+        "updatedAt": "2022-05-23T11:23:06+00:00",
+        "contentType": "product",
+        "objectTitle": "T-shit logo on back",
+        "workflow_state": "saved"
+    },
+    "description": "<p>Aliquam lectus arcu, accumsan quis libero vel, placerat faucibus orci. Aenean vitae mattis turpis, id egestas arcu. Integer non purus dui.</p>\n\n<ul>\n\t<li>Etiam porttitor massa id velit semper, vitae posuere leo egestas.</li>\n\t<li>Nunc congue, quam vestibulum cursus luctus, turpis sem feugiat odio, eu placerat ex tellus vitae elit.</li>\n\t<li>Phasellus sodales purus sed auctor feugiat. Morbi varius pretium ligula id semper. In ac scelerisque erat.</li>\n\t<li>Quisque a metus ut nibh finibus hendrerit.</li>\n</ul>\n",
+    "productImage": [
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-20f81845-d5b3-4cb2-915b-a3f4d968d1d0"
+        }
+    ],
+    "productGallery": [
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-7b39e02e-4332-4f64-a14a-fd62488a86c9"
+        },
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-d5b4371b-464b-4f74-9e77-3a8458e99d3b"
+        },
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-eb926fb8-8b28-4b3f-a39f-5d2c8643476d"
+        },
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-20f81845-d5b3-4cb2-915b-a3f4d968d1d0"
+        }
+    ]
+}
