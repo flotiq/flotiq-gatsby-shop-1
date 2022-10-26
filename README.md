@@ -47,6 +47,16 @@ GATSBY_FLOTIQ_API_KEY=YOUR FLOTIQ API KEY
 SNIPCART_API_KEY=YOUR SNIPCART API KEY
 GA_MEASUREMENT_ID=YOUR MEASUREMENT ID
 ```
+To add `SNIPCART API KEY` to your starter you need to log in to the website: https://snipcart.com/
+
+After this you need to get into your account options and choose `API KEYS` line. 
+To see how snipcart shop is working you need to copy `PUBLIC TEST API KEY` and paste it into your `.env` file instead `YOUR SNIPCART API KEY`.
+
+You need to remember that this is just for test look, to get full working snipcart shop for commercial use you need to buy it on the website.
+
+`PUBLIC TEST API KEY` below is just for example, it won't work!
+
+![image](https://user-images.githubusercontent.com/110597769/197960204-d6128d53-aa1d-4dd8-a482-886ea55296a1.png)
 
 ## Import data (optional)
 
