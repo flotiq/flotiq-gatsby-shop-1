@@ -2,18 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
-// import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
+import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
 import BestSellers from '../sections/BestSellers';
 import Products from '../sections/Products';
 
 const IndexPage = ({ data }) => {
     const products = data.allProduct.nodes;
-    // const categoryTabs = [
-    //     { name: 'New', href: '#', current: true },
-    //     { name: 'Shoes', href: '#', current: false },
-    //     { name: 'Clothing', href: '#', current: false },
-    //     { name: 'Accessories', href: '#', current: false },
-    // ];
+    const categoryTabs = [
+        { name: 'New', href: '#', current: true },
+        { name: 'Shoes', href: '#', current: false },
+        { name: 'Clothing', href: '#', current: false },
+        { name: 'Accessories', href: '#', current: false },
+    ];
 
     return (
         <Layout additionalClass={['bg-white']}>
@@ -25,10 +25,10 @@ const IndexPage = ({ data }) => {
                 />
             </Helmet>
 
-            {/* <CategoriesChoiceBar */}
-            {/*    additionalClass={['my-5']} */}
-            {/*    categoryTabs={categoryTabs} */}
-            {/* /> */}
+            <CategoriesChoiceBar
+                additionalClass={['my-5']}
+                categoryTabs={categoryTabs}
+            />
             <BestSellers
                 products={products}
                 additionalClass={['bg-green-gray py-14']}
