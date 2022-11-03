@@ -1,0 +1,39 @@
+{
+    "id": "product-249950",
+    "name": "T-shirt small logo",
+    "slug": "tshirt-small-logo",
+    "price": 35,
+    "internal": {
+        "createdAt": "2022-03-03T10:22:44+00:00",
+        "deletedAt": "",
+        "updatedAt": "2022-05-23T11:22:02+00:00",
+        "contentType": "product",
+        "objectTitle": "T-shirt small logo",
+        "workflow_state": "saved"
+    },
+    "description": "<p>Aliquam lectus arcu, accumsan quis libero vel, placerat faucibus orci. Aenean vitae mattis turpis, id egestas arcu. Integer non purus dui.</p>\n\n<ul>\n\t<li>Etiam porttitor massa id velit semper, vitae posuere leo egestas.</li>\n\t<li>Nunc congue, quam vestibulum cursus luctus, turpis sem feugiat odio, eu placerat ex tellus vitae elit.</li>\n\t<li>Phasellus sodales purus sed auctor feugiat. Morbi varius pretium ligula id semper. In ac scelerisque erat.</li>\n\t<li>Quisque a metus ut nibh finibus hendrerit.</li>\n</ul>\n",
+    "productImage": [
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-67dd1778-7bc4-48d1-bfa7-9c8d49fb2140"
+        }
+    ],
+    "productGallery": [
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-eb926fb8-8b28-4b3f-a39f-5d2c8643476d"
+        },
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-1d34ad29-c95e-446f-87cd-d400752aa92e"
+        },
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-ff5145e0-7344-447a-a8bf-c2ca06161db6"
+        },
+        {
+            "type": "internal",
+            "dataUrl": "/api/v1/content/_media/_media-67dd1778-7bc4-48d1-bfa7-9c8d49fb2140"
+        }
+    ]
+}
