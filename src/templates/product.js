@@ -45,6 +45,14 @@ const buttonLabel = 'Add to cart';
 //     { name: 'XL', current: false },
 //     { name: 'XXL', current: false },
 // ];
+// const sizes = [
+//     { name: 'XS', current: false },
+//     { name: 'S', current: false },
+//     { name: 'M', current: false },
+//     { name: 'L', current: true },
+//     { name: 'XL', current: false },
+//     { name: 'XXL', current: false },
+// ];
 
 /**
  * Content of example page
