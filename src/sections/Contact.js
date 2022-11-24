@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Header, Image } from 'flotiq-components-react';
+import { Button, Header } from 'flotiq-components-react';
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const linkedinPath = 'M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.4'
     + '8-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.'
@@ -78,12 +79,12 @@ const Contact = ({
     emailAddress,
 }) => (
     <div className={['grid md:grid-cols-2 max-w-7xl mx-auto mt-20 '
-    + 'py-1 md:py-6 px-4 sm:px-6 lg:px-8', ...additionalClass].join(' ')}
+        + 'py-1 md:py-6 px-4 sm:px-6 lg:px-8', ...additionalClass].join(' ')}
     >
         <div className="flex flex-col md:items-start
         justify-start order-2 md:order-1 md:mt-10 lg:mt-0"
         >
-            <Image url={logoImage} additionalClasses={['hidden md:block h-8 md:h-11 w-auto']} width="150" height="39" />
+            <StaticImage src='../assets/shop-logo.svg' className={['hidden md:block h-8 md:h-11 w-auto']} width={169} height={44} alt="Logo" placeholder="none" />
             <div className="grid xl:grid-cols-2 items-start justify-center md:justify-start p-5 xl:p-0 mt-7 md:mt-20">
                 <div className="hidden md:block flex flex-col space-y-1 mb-10">
                     <Header
@@ -123,12 +124,12 @@ const Contact = ({
                 </div>
             </div>
             <div className="w-full md:hidden flex flex-col items-center justify-between mt-10">
-                <Image
-                    url={logoImage}
-                    additionalClasses={['h-10 md:h-16 w-auto mb-20']}
+                <StaticImage
+                    src='../assets/shop-logo.svg'
+                    className={['h-10 md:h-16 w-auto mb-20']}
                     alt="Logo"
-                    width="150"
-                    height="39"
+                    width={154}
+                    height={40}
                 />
                 <Header additionalClasses={['!font-light !text-2xl !p-0 mb-3 uppercase']}>
                     Find us
@@ -206,7 +207,7 @@ const Contact = ({
                         label={buttonLabel}
                         rounded="none"
                         additionalClasses={['w-fit text-base font-light text-white bg-primary justify-center '
-                        + 'uppercase mt-4 md:mt-7 mx-auto md:mx-0']}
+                            + 'uppercase mt-4 md:mt-7 mx-auto md:mx-0']}
                     />
                 </form>
             </div>

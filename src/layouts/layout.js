@@ -13,7 +13,6 @@ const Layout = ({ children, additionalClass = [] }) => (
         <Header />
         {children}
         <Contact
-            logoImage={Logo}
             additionalClass={['my-5']}
             socialIconsHeaderText="Find us"
             formHeaderText="Contact us"

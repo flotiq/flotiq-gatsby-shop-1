@@ -37,14 +37,14 @@ const reviews = [
 ];
 
 const buttonLabel = 'Add to cart';
-const sizes = [
-    { name: 'XS', current: false },
-    { name: 'S', current: false },
-    { name: 'M', current: false },
-    { name: 'L', current: true },
-    { name: 'XL', current: false },
-    { name: 'XXL', current: false },
-];
+// const sizes = [
+//     { name: 'XS', current: false },
+//     { name: 'S', current: false },
+//     { name: 'M', current: false },
+//     { name: 'L', current: true },
+//     { name: 'XL', current: false },
+//     { name: 'XXL', current: false },
+// ];
 
 /**
  * Content of example page
@@ -91,7 +91,7 @@ const ExamplePage = ({ data }) => {
                         {product.description}
                     </Paragraph>
                     <div className="flex flex-col w-full md:w-1/2">
-                        <div className="flex items-center justify-between text-xl font-light border-b border-gray/30 
+                        {/* <div className="flex items-center justify-between text-xl font-light border-b border-gray/30 
                          py-7 uppercase"
                         >
                             Size
@@ -100,7 +100,7 @@ const ExamplePage = ({ data }) => {
                                     Select a tab
                                 </label>
                                 {/* /! Use an "onChange" listener to redirect the user to the selected tab URL. !/ */}
-                                <select
+                        {/* <select
                                     id="tabs"
                                     name="tabs"
                                     className="block w-full pl-7 pr-14 py-1 text-lg !font-light bg-light-gray"
@@ -111,7 +111,7 @@ const ExamplePage = ({ data }) => {
                                     ))}
                                 </select>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="flex items-center justify-between text-xl font-light py-7 uppercase">
                             Quantity
                             <div className="flex items-center md:items-stretch ml-8 font-roboto bg-light-gray ">
@@ -189,7 +189,7 @@ export const pageQuery = graphql`
                 localFile {
                     publicURL
                     childImageSharp {
-                        gatsbyImageData(layout: FULL_WIDTH)
+                        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                     }
                 }
             }
@@ -214,7 +214,7 @@ export const pageQuery = graphql`
                     localFile {
                         publicURL
                         childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH)
+                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                         }
                     }
                 }
@@ -226,7 +226,7 @@ export const pageQuery = graphql`
                     localFile {
                         publicURL
                         childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH)
+                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                         }
                     }
                 }
