@@ -12,27 +12,27 @@ import Avatar from '../assets/avatar.jpg';
 const reviews = [
     {
         review: 'The best store in our town! plants are always in good condition.',
-        author: 'Joe Jonas'
+        author: 'Joe Jonas',
     },
     {
         review: 'I ordered 3 packs of roses last friday and they all came so fast and fresh',
-        author: 'Kate Smith'
+        author: 'Kate Smith',
     },
     {
         review: 'The staff was so sweet they helped me decorate my room with plants!',
-        author: 'John Doe'
+        author: 'John Doe',
     },
     {
         review: 'The best store in our town! plants are always in good condition.',
-        author: 'Jane Doe'
+        author: 'Jane Doe',
     },
     {
         review: 'I ordered 3 packs of roses last friday and they all came so fast and fresh',
-        author: 'John Kovalski'
+        author: 'John Kovalski',
     },
     {
         review: 'The staff was so sweet they helped me decorate my room with plants!',
-        author: 'Joe Novak'
+        author: 'Joe Novak',
     },
 ];
 
@@ -99,7 +99,7 @@ const ExamplePage = ({ data }) => {
                         {product.description}
                     </Paragraph>
                     <div className="flex flex-col w-full md:w-1/2">
-                        {/* <div className="flex items-center justify-between text-xl font-light border-b border-gray/30 
+                        {/* <div className="flex items-center justify-between text-xl font-light border-b border-gray/30
                          py-7 uppercase"
                         >
                             Size

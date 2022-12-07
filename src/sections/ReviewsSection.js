@@ -38,7 +38,7 @@ const CarouselNavigation = ({ goToSlide, ...rest }) => {
     );
 };
 
-const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
+const ReviewsSection = ({ headerText, reviews, additionalClass }) => (
     <div
         className={['max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative', ...additionalClass].join(' ')}
     >
@@ -68,9 +68,9 @@ const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
                         <div className="grid grid-cols-3">
                             <div className="flex items-center space-x-3 h-full bg-black col-span-2">
                                 <StaticImage
-                                    src='../assets/avatar.jpg'
+                                    src="../assets/avatar.jpg"
                                     className={['w-12 md:w-14']}
-                                    alt='avatar'
+                                    alt="avatar"
                                 />
                                 <Paragraph
                                     additionalClasses={['!text-sm md:!text-base !font-light text-white uppercase pl-1']}
