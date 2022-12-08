@@ -24,11 +24,10 @@ const IndexPage = ({ data }) => {
                     content={data.site.siteMetadata.description}
                 />
             </Helmet>
-
-            {/* <CategoriesChoiceBar */}
-            {/*    additionalClass={['my-5']} */}
-            {/*    categoryTabs={categoryTabs} */}
-            {/* /> */}
+            {/* <CategoriesChoiceBar
+                additionalClass={['my-5']}
+                categoryTabs={categoryTabs}
+            /> */}
             <BestSellers
                 products={products}
                 additionalClass={['bg-green-gray py-14']}
@@ -66,7 +65,7 @@ export const pageQuery = graphql`
                     localFile {
                         publicURL
                         childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH)
+                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                         }
                     }
                 }
@@ -78,7 +77,7 @@ export const pageQuery = graphql`
                     localFile {
                         publicURL
                         childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH)
+                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                         }
                     }
                 }

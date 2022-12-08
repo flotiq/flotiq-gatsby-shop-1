@@ -1,7 +1,8 @@
 import React from 'react';
-import { Image, Header, Paragraph } from 'flotiq-components-react';
+import { Header, Paragraph } from 'flotiq-components-react';
 import Carousel from 'react-multi-carousel';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const responsive = {
     desktop: {
@@ -37,7 +38,7 @@ const CarouselNavigation = ({ goToSlide, ...rest }) => {
     );
 };
 
-const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
+const ReviewsSection = ({ headerText, reviews, additionalClass }) => (
     <div
         className={['max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative', ...additionalClass].join(' ')}
     >
@@ -66,9 +67,10 @@ const ReviewsSection = ({ headerText, reviews, avatar, additionalClass }) => (
                         </Paragraph>
                         <div className="grid grid-cols-3">
                             <div className="flex items-center space-x-3 h-full bg-black col-span-2">
-                                <Image
-                                    url={avatar}
-                                    additionalClasses={['w-12 md:w-14']}
+                                <StaticImage
+                                    src="../assets/avatar.jpg"
+                                    className={['w-12 md:w-14']}
+                                    alt="avatar"
                                 />
                                 <Paragraph
                                     additionalClasses={['!text-sm md:!text-base !font-light text-white uppercase pl-1']}

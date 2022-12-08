@@ -59,7 +59,15 @@ module.exports = {
             },
         },
         'gatsby-plugin-image',
-        'gatsby-plugin-sharp',
+        {
+            resolve: 'gatsby-plugin-sharp',
+            options: {
+                defaults: {
+                    quality: 80,
+                },
+                base64Width: 20,
+            },
+        },
         'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-plugin-robots-txt',
