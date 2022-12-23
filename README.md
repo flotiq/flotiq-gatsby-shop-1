@@ -15,7 +15,7 @@ This project use:
 * [Flotiq source plugin](https://github.com/flotiq/gatsby-source-flotiq) - connector for fetching data from Flotiq
 * [Flotiq components for react](https://flotiq.github.io/flotiq-components-react) - components library designed and written to work perfectly with Flotiq Content Objects and display your data beautifully
 
-This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
+This project works on node >=18.0.0, as require Gatsby 5.
 
 ## Quick start using Flotiq CLI
 
