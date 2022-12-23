@@ -177,70 +177,74 @@ const ExamplePage = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-    query ProductBySlug($slug: String!) {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        product( slug: { eq: $slug } ) {
-            name
-            price
-            slug
-            description
-            id
-            productImage {
-                extension
-                url
-                width
-                height
-                localFile {
-                    publicURL
-                    childImageSharp {
-                        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-                    }
-                }
-            }
-            productGallery {
-                localFile {
-                    publicURL
-                }
-            }
-        }
-        allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: 5, filter: {slug: {ne: $slug}}) {
-            nodes {
-                name
-                price
-                slug
-                description
-                id
-                productGallery {
-                    extension
-                    url
-                    width
-                    height
-                    localFile {
-                        publicURL
-                        childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-                        }
-                    }
-                }
-                productImage {
-                    extension
-                    url
-                    width
-                    height
-                    localFile {
-                        publicURL
-                        childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-                        }
-                    }
-                }
-            }
-        }
+query ProductBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    product(slug: {eq: $slug}) {
+      name
+      price
+      slug
+      description
+      id
+      productImage {
+        extension
+        url
+        width
+        height
+        localFile {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+          }
+        }
+      }
+      productGallery {
+        localFile {
+          publicURL
+        }
+      }
+    }
+    allProduct(
+      sort: {flotiqInternal: {createdAt: DESC}}
+      limit: 5
+      filter: {slug: {ne: $slug}}
+    ) {
+      nodes {
+        name
+        price
+        slug
+        description
+        id
+        productGallery {
+          extension
+          url
+          width
+          height
+          localFile {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+            }
+          }
+        }
+        productImage {
+          extension
+          url
+          width
+          height
+          localFile {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default ExamplePage;

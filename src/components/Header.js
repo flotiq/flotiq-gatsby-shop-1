@@ -1,7 +1,7 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { ShoppingBagIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import Logo from '../assets/shop-logo.svg';
 
 const Header = () => (

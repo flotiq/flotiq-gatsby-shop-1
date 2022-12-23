@@ -5,15 +5,15 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const singleProduct = path.resolve('./src/templates/product.js');
     const result = await graphql(`
-        query GetProducts {
-            allProduct(sort: {order: DESC, fields: flotiqInternal___createdAt}) {
-                edges {
-                    node {
-                        slug
-                    }
-                }
+    query GetProducts {
+        allProduct(sort: {flotiqInternal: {createdAt: DESC}}) {
+          edges {
+            node {
+              slug
             }
+          }
         }
+      }
 `);
 
     if (result.errors) {

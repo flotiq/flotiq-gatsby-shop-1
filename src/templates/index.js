@@ -43,47 +43,51 @@ const IndexPage = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-    query indexQuery($skip: Int!, $limit: Int!) {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
-        allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: $limit, skip: $skip,) {
-            nodes {
-                name
-                price
-                slug
-                description
-                id
-                productGallery {
-                    extension
-                    url
-                    width
-                    height
-                    localFile {
-                        publicURL
-                        childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-                        }
-                    }
-                }
-                productImage {
-                    extension
-                    url
-                    width
-                    height
-                    localFile {
-                        publicURL
-                        childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-                        }
-                    }
-                }
-            }
-        }
+query indexQuery($skip: Int!, $limit: Int!) {
+    site {
+      siteMetadata {
+        title
+        description
+      }
     }
+    allProduct(
+      sort: {flotiqInternal: {createdAt: DESC}}
+      limit: $limit
+      skip: $skip
+    ) {
+      nodes {
+        name
+        price
+        slug
+        description
+        id
+        productGallery {
+          extension
+          url
+          width
+          height
+          localFile {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+            }
+          }
+        }
+        productImage {
+          extension
+          url
+          width
+          height
+          localFile {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default IndexPage;
