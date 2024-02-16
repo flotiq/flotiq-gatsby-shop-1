@@ -1966,14 +1966,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
-  version "7.19.4"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.19.4.tgz"
-  integrity sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.17.9", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.9", "@babel/runtime@^7.18.9", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.23.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.1.tgz#72741dc4d413338a91dcb044a86f3c0bc402646d"
   integrity sha512-hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==
@@ -7125,10 +7118,10 @@ gatsby-plugin-gatsby-cloud@^5.2.0:
     lodash "^4.17.21"
     webpack-assets-manifest "^5.1.0"
 
-gatsby-plugin-google-gtag@^5.2.0:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.12.1.tgz#9f6b767e50b51bcd932a5dca6fd7465f44736974"
-  integrity sha512-pAqCW+FEww0l1Prvg7WeenwsMu5XJJg+/hyW2aP0uL2PETzTK6eQekkWE+moxrRXEt2r4V9+GdrpQnuma7a52A==
+gatsby-plugin-google-gtag@^5.13.1:
+  version "5.13.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.13.1.tgz#81b294f2ab12dad5ba5e9946e4b78cd315676bbc"
+  integrity sha512-aaJKIDwUWwhooJnalse1uvcusBmCwCVK33pp1IrDU02E7IohMen3eR5TsjLbfKO7Z+SbfKJEqUoi/r0ozrJarA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     minimatch "^3.1.2"
