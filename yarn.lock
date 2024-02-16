@@ -2100,10 +2100,10 @@
   resolved "https://registry.npmjs.org/@fontsource/inter/-/inter-4.5.14.tgz"
   integrity sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==
 
-"@fontsource/ubuntu@^4.5.3":
-  version "4.5.11"
-  resolved "https://registry.npmjs.org/@fontsource/ubuntu/-/ubuntu-4.5.11.tgz"
-  integrity sha512-c+B8A8r31hJLk8Ek7Svoz4GwjtInhc60LFM6XTr5TKtZbcct8TPNxJuKX4+hnqoWgcvy8s0Gj4mde4TcK/SgDQ==
+"@fontsource/ubuntu@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-5.0.8.tgz#5009cfaf00057277acdb88caa3537686248a484d"
+  integrity sha512-lZY64hVXrnkt/+5jRfm0uMiRv+lmrIdnATAnDj1SPqebmI2UDf3KC9p4rOkIYsBOjOsD6seJ82GIQE067DSvWw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@^2.12.0":
   version "2.12.0"
