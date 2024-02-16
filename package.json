@@ -38,7 +38,7 @@
     "gatsby-plugin-snipcart-advanced": "^1.0.3",
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-source-flotiq": "^5.0.0",
-    "gatsby-transformer-sharp": "^5.2.0",
+    "gatsby-transformer-sharp": "^5.13.1",
     "node": "^18.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
