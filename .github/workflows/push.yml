@@ -1,4 +1,4 @@
-name: test-build
+name: Push workflow
 on:
   push:
     branches:

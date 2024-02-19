@@ -1,11 +1,11 @@
-name: Dependabot auto-approve
+name: PR workflow
 on: pull_request
 
 permissions:
   pull-requests: write
 
 jobs:
-  test:
+  test-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -29,7 +29,7 @@ jobs:
           SNIPCART_API_KEY: 'test'
           GA_MEASUREMENT_ID: ''
   dependabot:
-    needs: test
+    needs: test-build
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
