@@ -19,7 +19,7 @@
     "@fontsource/inter": "^5.0.16",
     "@fontsource/ubuntu": "^4.5.3",
     "@headlessui/react": "^1.7.18",
-    "@heroicons/react": "^1.0.5",
+    "@heroicons/react": "^2.1.1",
     "@popperjs/core": "^2.11.0",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/line-clamp": "^0.4.4",
