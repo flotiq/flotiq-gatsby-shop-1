@@ -1969,10 +1969,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
-"@fontsource/inter@^4.5.4":
-  version "4.5.14"
-  resolved "https://registry.npmjs.org/@fontsource/inter/-/inter-4.5.14.tgz"
-  integrity sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==
+"@fontsource/inter@^5.0.16":
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.16.tgz#b858508cdb56dcbbf3166903122851e2fbd16b50"
+  integrity sha512-qF0aH5UiZvCmneX5orJbVRoc2VTyLTV3X/7laMp03Qt28L+B9tFlZODOGUL64wDWc69YVdi1LeJB0cIgd51lvw==
 
 "@fontsource/ubuntu@^4.5.3":
   version "4.5.11"
