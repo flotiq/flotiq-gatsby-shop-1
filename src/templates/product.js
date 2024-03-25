@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import { Paragraph, Header, Button } from 'flotiq-components-react';
-import { PlusIcon, MinusIcon } from '@heroicons/react/solid';
+import { PlusIcon, MinusIcon } from '@heroicons/react/20/solid';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
 import CustomersChoice from '../sections/CustomersChoice';

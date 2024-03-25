@@ -1,6 +1,6 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
-import { ShoppingBagIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { ShoppingBagIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'gatsby';
 import Logo from '../assets/shop-logo.svg';
 
@@ -40,9 +40,9 @@ const Header = () => (
                             >
                                 <span className="sr-only">Open main menu</span>
                                 {open ? (
-                                    <XIcon className="block h-12 w-12" aria-hidden="true" />
+                                    <XMarkIcon className="block h-12 w-12" aria-hidden="true" />
                                 ) : (
-                                    <MenuIcon className="block h-12 w-12" aria-hidden="true" />
+                                    <Bars3Icon className="block h-12 w-12" aria-hidden="true" />
                                 )}
                             </Disclosure.Button>
                         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Paragraph } from 'flotiq-components-react';
 import Carousel from 'react-multi-carousel';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const responsive = {
