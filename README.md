@@ -125,6 +125,15 @@ Or to [Netlify](https://www.netlify.com/):
 
 [![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/flotiq/flotiq-gatsby-shop-1)
 
+Or to [Cloudflare Workers](https://workers.cloudflare.com/):
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/flotiq/flotiq-gatsby-shop-1)
+
+### Note
+Cloudflare Workers deployment uses Flotiq starter API key, if you want to deploy a worker with your own Flotiq API key, after deployment go to your forked repository on GitHub and add a GATSBY_FLOTIQ_API secret in repository's settings, then in Actions, select "Deploy Cloudflare Worker" workflow and click "Run workflow" to deploy the worker again.
+
+More information about GitHub secrets can be found [here](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
+
 
 ## What's inside?
 
@@ -157,6 +166,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── README.md
     ├── static.json
     ├── tailwind.config.js
+    ├── worker-index.js
+    ├── wrangler.toml
     └── yarn.lock
 
 1. **`.flotiq`**: This directory contains content types necessary to starter to work.
@@ -211,7 +222,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 26. **`tailwind.config.js`**: Configuration file for tailwind.
 
-27. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your yarn dependencies that were installed for your project. **(You won’t change this file directly).**
+27. **`worker-index.js`**: Main file for Cloudflare Workers.
+
+28. **`wrangler.toml`**: Configuration file for Cloudflare Workers deployment.
+
+29. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your yarn dependencies that were installed for your project. **(You won’t change this file directly).**
 
 ## Learning Gatsby
 
