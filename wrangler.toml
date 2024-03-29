@@ -1,0 +1,7 @@
+name = "flotiq-gatsby-shop-1"
+main = "worker-index.js"
+compatibility_date = "2024-03-27"
+workers_dev = true
+
+[site]
+bucket = "./public"

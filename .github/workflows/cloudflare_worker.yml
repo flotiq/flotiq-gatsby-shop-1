@@ -1,0 +1,36 @@
+name: Deploy Cloudflare Worker
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 18.x ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js {{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Check if Flotiq API key is set.
+        env:
+          GATSBY_FLOTIQ_API_KEY: ${{ secrets.GATSBY_FLOTIQ_API_KEY }}
+        run: |
+          if [ -z "$GATSBY_FLOTIQ_API_KEY" ]; then
+            echo "Flotiq API Key is not set, using a starter one." && echo "GATSBY_FLOTIQ_API_KEY=74df34da6d8fd27cfc04c35f995a57d4" >> $GITHUB_ENV
+          else
+            echo "Using user-provided Flotiq API Key. Importing starter data to Flotiq." && echo "GATSBY_FLOTIQ_API_KEY=$GATSBY_FLOTIQ_API_KEY" >> $GITHUB_ENV
+            npm install -g flotiq-cli
+            flotiq import . $GATSBY_FLOTIQ_API_KEY
+          fi
+      - run: npm install -g gatsby-cli
+      - run: yarn install
+      - run: gatsby build
+      - name: Build & Deploy Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
