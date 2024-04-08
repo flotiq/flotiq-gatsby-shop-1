@@ -34,7 +34,7 @@
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^5.2.0",
-    "gatsby-plugin-sitemap": "^6.2.0",
+    "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-plugin-snipcart-advanced": "^1.0.3",
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-source-flotiq": "^5.0.0",
