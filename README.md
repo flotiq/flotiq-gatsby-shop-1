@@ -113,11 +113,7 @@ For other services you can configure [Webhook](https://flotiq.com/docs/panel/web
 
 ## Deploy
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/flotiq/flotiq-gatsby-shop-1)
-
-You can also deploy this project to [Heroku](https://www.heroku.com/) in 3 minutes:
+Deploy this project to [Heroku](https://www.heroku.com/) in 3 minutes:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/flotiq/flotiq-gatsby-shop-1)
 
