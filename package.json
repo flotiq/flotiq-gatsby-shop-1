@@ -48,7 +48,7 @@
     "webpack": "^5.90.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.4",
+    "@babel/core": "^7.24.4",
     "@babel/eslint-parser": "^7.23.10",
     "@babel/plugin-syntax-flow": "^7.24.1",
     "@babel/plugin-transform-react-jsx": "^7.23.4",
