@@ -16,7 +16,7 @@
     "lint": "eslint --ext .js,.jsx ."
   },
   "dependencies": {
-    "@fontsource/inter": "^5.0.17",
+    "@fontsource/inter": "^5.0.18",
     "@fontsource/ubuntu": "^5.0.12",
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "1.0.6",
