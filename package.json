@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.17",
-    "@fontsource/ubuntu": "^5.0.12",
+    "@fontsource/ubuntu": "^5.0.13",
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "1.0.6",
     "@popperjs/core": "^2.11.8",
