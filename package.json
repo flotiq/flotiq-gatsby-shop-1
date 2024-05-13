@@ -38,7 +38,7 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-source-flotiq": "^5.2.0",
     "gatsby-transformer-sharp": "^5.13.1",
-    "node": "^18.20.2",
+    "node": "^20.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
