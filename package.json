@@ -44,7 +44,7 @@
     "react-helmet": "^6.1.0",
     "react-multi-carousel": "^2.8.5",
     "typescript": "^5.5.4",
-    "webpack": "^5.93.0"
+    "webpack": "^5.94.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
