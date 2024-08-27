@@ -149,7 +149,7 @@ const ExamplePage = ({ data }) => {
                             label={buttonLabel}
                             rounded="none"
                             size="sm"
-                            additionalClasses={['bg-transparent justify-center uppercase !text-base font-light',
+                            additionalClasses={['justify-center uppercase !text-base font-light',
                                 'text-primary border shadow-none uppercase !px-5 !py-4 mt-1', 'snipcart-add-item']}
                             data-item-id={product.slug}
                             data-item-price={product.price}
