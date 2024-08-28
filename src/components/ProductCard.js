@@ -29,7 +29,7 @@ const ProductCard = ({ name, price, productImage, buttonLabel, slug }) => (
                     label={buttonLabel}
                     rounded="none"
                     size="sm"
-                    additionalClasses={['bg-transparent justify-center uppercase !text-md font-light text-primary',
+                    additionalClasses={['justify-center uppercase !text-md font-light text-primary',
                         'border shadow-none uppercase !px-5', 'snipcart-add-item']}
                     data-item-id={slug}
                     data-item-price={price}
