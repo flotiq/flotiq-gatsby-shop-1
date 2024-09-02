@@ -8024,10 +8024,10 @@ gatsby-source-filesystem@^5.13.1, gatsby-source-filesystem@^5.3.1:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-source-flotiq@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-flotiq/-/gatsby-source-flotiq-5.2.1.tgz#f29d61ef7e1d1c2814a30f23128aec967ff410bf"
-  integrity sha512-lOxlGBj1Ug4N3tq6Efic9Qb4Ezj5ltNS5FvunPpVSjBxsuHHJv89Mq9SguYxa+378liseiHeUlYd7YPwkZNKoQ==
+gatsby-source-flotiq@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-source-flotiq/-/gatsby-source-flotiq-5.2.2.tgz#550873b00aaf6064ea69d54f4a4ae94f7e093303"
+  integrity sha512-tlrVSvIN1lfB9lfzCJR/aGYzHx4H/9IDOpnN1D/yZW34bSZvJDBJHCvNtndos5r9D/iKdGdUg45KkXo+7IvqLQ==
   dependencies:
     gatsby-core-utils "^4.3.1"
     gatsby-source-filesystem "^5.3.1"
