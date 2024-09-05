@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install -g gatsby-cli
       - run: npm install -g flotiq-cli
-      - run: flotiq import . ${{ secrets.GATSBY_FLOTIQ_API_KEY }}
+      - run: flotiq import .flotiq ${{ secrets.GATSBY_FLOTIQ_API_KEY }}
       - run: yarn install
       - run: gatsby build
         env:
