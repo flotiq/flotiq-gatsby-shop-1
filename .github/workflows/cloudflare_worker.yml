@@ -24,7 +24,7 @@ jobs:
           else
             echo "Using user-provided Flotiq API Key. Importing starter data to Flotiq." && echo "GATSBY_FLOTIQ_API_KEY=$GATSBY_FLOTIQ_API_KEY" >> $GITHUB_ENV
             npm install -g flotiq-cli
-            flotiq import . $GATSBY_FLOTIQ_API_KEY
+            flotiq import .flotiq $GATSBY_FLOTIQ_API_KEY
           fi
       - run: npm install -g gatsby-cli
       - run: yarn install
