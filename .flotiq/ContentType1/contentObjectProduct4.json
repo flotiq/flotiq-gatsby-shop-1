@@ -9,7 +9,7 @@
         "updatedAt": "2022-05-23T11:22:34+00:00",
         "contentType": "product",
         "objectTitle": "Sweatshirt",
-        "workflow_state": "saved"
+        "workflow_state": "public"
     },
     "description": "<p>Aliquam lectus arcu, accumsan quis libero vel, placerat faucibus orci. Aenean vitae mattis turpis, id egestas arcu. Integer non purus dui.</p>\n\n<ul>\n\t<li>Etiam porttitor massa id velit semper, vitae posuere leo egestas.</li>\n\t<li>Nunc congue, quam vestibulum cursus luctus, turpis sem feugiat odio, eu placerat ex tellus vitae elit.</li>\n\t<li>Phasellus sodales purus sed auctor feugiat. Morbi varius pretium ligula id semper. In ac scelerisque erat.</li>\n\t<li>Quisque a metus ut nibh finibus hendrerit.</li>\n</ul>\n",
     "productImage": [
