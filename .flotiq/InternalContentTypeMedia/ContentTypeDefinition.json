@@ -1,7 +1,6 @@
 {
   "name": "_media",
   "label": "Media (internal)",
-  "workflowId": "generic",
   "internal": true,
   "schemaDefinition": {
     "type": "object",
