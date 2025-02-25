@@ -1,7 +1,6 @@
 {
   "name": "product",
   "label": "Product",
-  "workflowId": "generic",
   "internal": false,
   "schemaDefinition": {
     "type": "object",
